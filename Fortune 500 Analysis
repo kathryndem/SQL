@@ -81,9 +81,9 @@ SELECT company_name
 ,paid_time_off_days
 ,CASE
 	WHEN paid_time_off_days >18 THEN 'above average'
-    WHEN paid_time_off_days <18 THEN 'below average'
-    ELSE 'average'
-    END AS pto_comparison
+   	WHEN paid_time_off_days <18 THEN 'below average'
+   	ELSE 'average'
+    	END AS pto_comparison
 FROM fortune_companies 
 ORDER BY paid_time_off_days DESC
 ;
